@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="tupas-mock-bank:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="tupas-mock-bank-0.1.0.war">
+      <element id="artifact" artifact-name="tupas-mock-bank:war exploded" />
+    </root>
+  </artifact>
+</component>
