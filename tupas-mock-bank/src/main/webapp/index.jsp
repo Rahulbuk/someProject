@@ -46,109 +46,27 @@
 						<td class="col-md-1"> # </td>
 						
 						<td class="col-md-2"><img ng-src="bank.logo" width="32px"
-							height="32px" ng-click="banks/login/{{bank.id}}" /></td>
+							height="32px" ng-click="login/{{bank.id}}" /></td>
 						
 						<td class="col-md-3">
-						<a href="banks/login/{{bank.id}}"> <b>{{bank.bankName}}</b>
+						<a href="login/{{bank.id}}"> <b>{{bank.bankName}}</b>
 						</a>
 						</td>
 
 						<td class="col-md-2"">
 						<div class="panel-heading-controls">
-							<button class="btn btn-warning" ng-click="banks/login/{{bank.id}}">Login</button> 
+							<button class="btn btn-warning" ng-click="login/{{bank.id}}">Login</button>
 						</div>
 						</td>
 						<td class="col-md-3"">
 						</td>
-						
-						
 					</tr>
 				</table>
 
 			</div>
 		</div>
-		<div id="add-task-panel" class="fadein fadeout addpanel panel"
-			ng-hide="toggle">
-			<div class="panel-heading">
-				<i class="panel-title-icon fa fa-plus"></i> <span
-					class="panel-title">Add New Productk</span>
-				<div class="panel-heading-controls">
-					<button ng-click="toggle = !toggle" class="btn btn-warning">Show
-						All Products</button>
-				</div>
-			</div>
-			<div class="panel-body">
-				<!-- <div class="task"> -->
-				<table class="table">
-					<tr>
-						<td>Product Name:*</td>
-						<td><input type="text" ng-model="productName" /> <input
-							type="hidden" ng-model="productID"></td>
-					</tr>
-					<tr>
-						<td>Product Description:</td>
-						<td>      <textarea class="form-control" rows="5" id="comment"ng-model="description"></textarea></td>
-					</tr>
-					<tr>
-						<td>Product Category:*</td>
-						<!-- <td><input type="text" ng-model="productCategory" /></td> -->
-						<td>
-						<select ng-model="productCategory" ng-options="category as category for category in categories">
-								<option value="">-- Select --</option>						
-						     	</select>
-						    </td> 	
-					</tr>
-					<tr>
-						<td>Product Manufacturer:</td>
-						<td><input type="text" ng-model="brand" /></td>
-					</tr>
-					<tr>
-						<td>Product Price:*</td>
-						<td><input type="text" ng-model="price" /></td>
-					</tr>
-					<tr>
-						<td>CURRENCY</td>
-						<td><input type="text" ng-model="currency" maxlength="3"  /></td>
-					</tr>
-					<tr>
-						<td>Product Stock:*</td>
-						<td><input type="text" ng-model="stock" /></td>
 
-					</tr>
-					<tr>
-						<td><br />
-							<button ng-click="addProduct()" class="btn btn-warning">{{buttonName}}</button></td>
-					</tr>
-				</table>
-			</div>
-		</div>
-		<!-- Modal -->
-		<div class="modal fade" id="myModal" role="dialog">
-			<div class="modal-dialog">
 
-				<!-- Modal content-->
-				<div class="modal-content" style = "width:350px">
-					<!-- <div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal">&times;</button>
-						<h4 class="modal-title">Update Stock</h4>
-					</div> -->
-					<div class="modal-body">
-						<span> Update Stock <input type="text" ng-model="stockUpdated" maxlength=8 style="width: 69px;" />
-							<button type="button" class="btn btn-warning"
-								data-dismiss="modal" ng-click="updateProductStock()">
-								Update</button>
-							<button type="button" class="btn btn-warning"
-								data-dismiss="modal">Cancel</button>
-						</span>
-
-					</div>
-					<!-- <div class="modal-footer">
-						
-					</div> -->
-				</div>
-
-			</div>
-		</div>
 	</div>
 </body>
 </html>

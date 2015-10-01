@@ -8,7 +8,7 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
 	<!-- Uncomment and your base-package here: -->
-	<context:component-scan base-package="package com.nordea.nvp.tupas.mockbank" />
+	<context:component-scan base-package="com.nordea.nvp.tupas.mockbank" />
 
 	<mvc:default-servlet-handler/>
 	<mvc:annotation-driven />

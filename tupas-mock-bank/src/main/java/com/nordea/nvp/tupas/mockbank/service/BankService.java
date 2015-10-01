@@ -11,18 +11,6 @@ public class BankService {
 	
 	private static List<Bank> banks = null;
 	
-	@Autowired
-	private Environment env;
-	/*static {
-		BankService b = new BankService();
-		b.loadBanks();
-		//loadBanks();
-	}
-*/
-	private  void loadBanks() {
-		Bank b = null;
-		System.out.println(env.getProperty("bankIds"));
 
-	}
 
 }

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <!-- Uncomment and add your base-package here: -->
+          <context:component-scan
+            base-package="com.nordea.nvp.tupas.mockbank"/>
+   <!--          <bean id="jaxb2marshaller" class="org.springframework.oxm.jaxb.Jaxb2Marshaller">
+            	<property name="contextPath" value="com.yenlo.penguin.ws.generated"/>
+            	
+            </bean>
+            <bean id="ProductSericeClient" class="com.yenlo.penguin.dao.products.ProductServiceDAOImpl">
+            	<property name="marshaller" ref="jaxb2marshaller"/>
+            	<property name="unmarshaller" ref="jaxb2marshaller"/>
+            	<property name="defaultUri" value="http://localhost:9764/services/ProductService?wsdl"></property>
+            </bean> --> 
+
+</beans>

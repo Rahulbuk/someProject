@@ -7,7 +7,7 @@
     
     <!-- Uncomment and add your base-package here: -->
           <context:component-scan
-            base-package="package com.nordea.nvp.tupas.mockbank"/>
+            base-package="com.nordea.nvp.tupas.mockbank"/>
    <!--          <bean id="jaxb2marshaller" class="org.springframework.oxm.jaxb.Jaxb2Marshaller">
             	<property name="contextPath" value="com.yenlo.penguin.ws.generated"/>
             	

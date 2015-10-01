@@ -8,12 +8,7 @@
 	<groupId>nordea-nvp</groupId>
 	<packaging>war</packaging>
 
-<!-- 	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.2.5.RELEASE</version>
-	</parent>
- -->
+
  <properties>
         
 
